@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Icono.ico">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nicolas</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Foto Hj.jpg" alt="">
+            </div>
+            <h1>Nicolas Tovar</h1>
+            <h2>Analista de datos JR- SQL,Python,Power BI/looker Studio.</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Nicolas Tovar.</span>Caracterizado por ser una persona entusiasta, objetiva y clara. Siempre dispuesta a aprender y mejorar cada día, agrado por el trabajo constante, buen trabajo en equipo y dispuesto siempre a conocer varios puntos de vista, tengo experiencia realizando limpieza de datos, consultas SQL y creacion de dashboard en power BI/looker studio. He apoyado areas de negocio en soporte de datos y reporting operativo mejorando tiempos de preparacion y calidad de la informacion.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            04-01-2005
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 3165605990
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nicolas.2005xp@gmail.com
+                        </li>
+                        
+                        <li>
+                            <strong>Dirección</strong>
+                            calle 72f #116b-84
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span >Analista de datos JR</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>MYSQL & SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso MYSQLSQL">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso Python">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra-skill">
+                            <div class="progreso PowerBI">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Looker Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso LookerStudio">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>R</span>
+                        <div class="barra-skill">
+                            <div class="progreso R">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajoenEquipo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Amabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso Amabilidad">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachiller tecnico en sistemas</h4>
+                        <span class="casa">Institución educativa tecnica industrial Rafel Navia Varon</span>
+                        <span class="fecha">2016 - 2021</span>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnologo en Analisis y Desarrollo de Software</h4>
+                        <span class="casa">Sena</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <p>Establecer requisitos de la solución de software de acuerdo con estándares y procedimientos técnicos
+Evaluar requisitos de la solución de software de acuerdo con metodologías de análisis y estándares.
+Implementar la solución de software de acuerdo con los requisitos de operación y modelos de referencia</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso Udemy- Analisis de datos</h4>
+                        <span class="casa">Academia Udemy</span>
+                        <span class="fecha">2022 - 2022</span>
+                        <p>Manejo avanzado de SQL: creación de bases de datos, consultas complejas, unión de tablas y optimización del rendimiento.
+Manipulación y visualización de datos en R: limpieza, transformación, gráficos impactantes y control de flujo con estructuras condicionales.
+Creación de dashboards interactivos y visuales en Power BI, Looker Studio y Excel, aplicando KPIs y funciones avanzadas (DAX, Power Query).
+Desarrollo de soluciones de ETL para transformar datos con precisión.
+Presentación efectiva de resultados mediante visualizaciones claras y personalizadas.
+Aplicación práctica de herramientas para resolver problemas reales de análisis y toma de decisiones..</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Logistica & Comercial</h4>
+                        <span class="casa">Ikea S.A.S</span>
+                        <span class="fecha">Oct 2023 - Jul 2024</span>
+                        <span class="fecha"></span>
+                        <p>Apoyé al área de logística en la entrega y seguimiento de mercancía, garantizando una distribución eficiente.
+Elaboré informes de indicadores clave de desempeño (KPIs) utilizando Power BI, facilitando la toma de decisiones basada en datos.
+Posteriormente, en el área de ventas, brindé acompañamiento a clientes durante el proceso de compra de productos en el almacén.
+Gestioné bases de datos en Excel con información de clientes potenciales, para campañas de seguimiento y fidelización.
+Participé en la planificación de espacios del hogar mediante el uso de la herramienta interna de diseño, ofreciendo propuestas personalizadas a los clientes.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de datos JR</h4>
+                        <span class="casa">DESCYA CONSULTORES</span>
+                        <span class="fecha">Jul 2024- Ene 2025</span>
+                        <p>Recolección y extracción de datos desde diversas fuentes, incluyendo hojas de cálculo en Excel y bases de datos relacionales como SQL y MySQL.
+Procesamiento y limpieza de datos utilizando herramientas como Excel, R y Python, garantizando la calidad y consistencia de la información.
+Manejo y administración de bases de datos, especialmente MySQL.
+Diseñé y desarrollé tableros dinámicos para la visualización de métricas a nivel campaña, facilitando el monitoreo y análisis de resultados en tiempo real.
+</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Soporte y Analisis de la información</h4>
+                        <span class="casa">CAFAM</span>
+                        <span class="fecha">Ene 2025-Jul 2025</span>
+                        <p>Implementé automatizaciones para el área de soporte en salud, eliminando tareas manuales realizadas diariamente y en horarios nocturnos.
+Automatización de contenedores en Azure, permitiendo el envío programado de datos por correo electrónico mediante procesos eficientes y escalables.
+Realicé limpieza y depuración de datos en listados de PQRSF utilizando SQL y Excel, logrando reducir significativamente el tiempo de preparación semanal.
+Elaboré manuales e informes para proveedores, facilitando su pago mensual y la evaluación del servicio prestado.
+Brindé soporte técnico de segundo nivel (N2) en el área comercial sobre aplicativos como SAP, CRM, y otras plataformas empresariales.
+Realicé validaciones técnicas relacionadas con redes y otros servicios transversales al área comercial
+</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <h1>Realicé un dashboard que presenta diversas métricas relacionadas con las ganancias de la empresa en distintas áreas, como Marketing, Clientes, entre otras. Este panel permite analizar la inversión realizada en cada campaña y verificar si se cumplió con las expectativas planteadas. Además, incluye la tasa de compra por género, lo que facilita identificar cuál de ellos realizó más adquisiciones y, con base en esa información, diseñar campañas dirigidas a ese público específico.Por último, se muestra la tasa de devoluciones, donde se detalla tanto la cantidad de productos devueltos por los clientes como el monto total de dinero reembolsado.</h1>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="Dashboard_1.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Dashboard_2.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Dashboard_3.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Dashboard_4.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="Dashboard_5.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="Bogota.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bogota Colombia, Gran granada
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: (+57) 316 560 5990
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: nicolas.2005xp@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
