@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Nicolas Tovar | Analista de datos Jr.</title>
+    <meta name="description" content="Portafolio de Nicolas Tovar, analista de datos Jr. en Bogotá con bases en ingeniería de datos: SQL, Python, Power BI, ETL, automatización y pipelines.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Icono.ico">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nicolas</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="Foto Hj.jpg" alt="Foto de Nicolas Tovar">
+            </div>
+            <h1>Nicolas Tovar</h1>
+            <h2>Analista de datos Jr.<br>con bases en ingeniería de datos<br>SQL, Python, Power BI y ETL</h2>
+            <div class="redes">
+                <a href="https://github.com/nicolastovar0504" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/TU-USUARIO" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:nicolas.2005xp@gmail.com" aria-label="Correo"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <div class="cta">
+                <a class="btn" href="#portafolio">Ver proyectos</a>
+                <a class="btn sec" href="PortafolioNicolasOficial.pdf" download>Descargar CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Nicolas Tovar.</span> Soy analista de datos Jr., con bases en ingeniería de datos, y estudiante de Ingeniería de Sistemas. Me enfoco en convertir datos desordenados en información confiable: extraigo, limpio y transformo datos con SQL y Python, diseño pipelines ETL básicos, automatizo tareas repetitivas y construyo dashboards en Power BI y Looker Studio. En mis trabajos he reducido hasta un 50 % el tiempo de procesos repetitivos y he presentado informes gerenciales a las áreas de negocio.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +57 3165605990
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nicolas.2005xp@gmail.com
+                        </li>
+                        
+                        <li>
+                            <strong>Ubicación</strong>
+                            Bogotá, Colombia
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span >Analista de datos Jr. · bases en ingeniería de datos</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades técnicas</h3>
+                    <div class="skill">
+                        <span>MYSQL & SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="MYSQLSQL">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="Python">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power BI</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="PowerBI">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Looker Studio</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="LookerStudio">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>R</span>
+                        <div class="barra-skill">
+                            <div class="progreso" data-skill="R">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Ingeniería de datos (básico)</h3>
+                    <div class="chips"><span>Pipelines ETL en Python</span><span>Modelado relacional y dimensional</span><span>Calidad y validación de datos</span><span>Ejecución programada en Azure</span><span>CSV, Excel y JSON</span><span>APIs</span></div>
+                    <h3>Herramientas</h3>
+                    <div class="chips"><span>Power Query</span><span>DAX</span><span>Excel avanzado y VBA</span><span>pandas</span><span>openpyxl</span><span>Streamlit</span><span>Git y GitHub</span><span>SAP y CRM</span></div>
+                    <h3>Cómo trabajo</h3>
+                    <div class="chips"><span>Comunicación clara</span><span>Trabajo en equipo</span><span>Automatizar lo repetitivo</span><span>Aprendizaje continuo</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación y formación</h3>
+                    <div class="item izq">
+                        <h4>Ingeniería de Sistemas (9.º semestre)</h4>
+                        <span class="casa">Universidad CUN</span>
+                        <span class="fecha">En curso</span>
+                        <ul><li>Formación orientada al análisis de datos y a generar valor a partir de la información, con fundamentos en programación.</li><li>Bases de datos, SQL, Python y Excel avanzado para procesar, limpiar e interpretar datos.</li><li>Power BI para crear dashboards e indicadores que apoyan decisiones estratégicas.</li><li>Estadística, lógica de programación y gestión de datos para identificar patrones y tendencias.</li><li>Bases de redes de computadores e ingeniería web.</li><li>Interés en ciencia de datos, inteligencia de negocios, ingeniería de datos y transformación digital.</li></ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Construcción de bases de datos con MySQL</h4>
+                        <span class="casa">Curso</span>
+                        <span class="fecha">2025</span>
+                        <ul><li>Diseño, creación y gestión de bases de datos relacionales.</li><li>SQL para definición y manipulación de datos (DDL y DML), tablas, relaciones, claves primarias y foráneas, normalización y consultas avanzadas.</li></ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de análisis de datos</h4>
+                        <span class="casa">Udemy</span>
+                        <span class="fecha">2025</span>
+                        <ul><li>SQL avanzado: bases de datos, consultas complejas, uniones y optimización del rendimiento.</li><li>R: limpieza, transformación y visualización de datos.</li><li>Dashboards en Power BI, Looker Studio y Excel con KPIs, DAX y Power Query.</li><li>Soluciones de ETL para transformar datos con precisión.</li><li>Presentación efectiva de resultados con visualizaciones claras.</li></ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Tecnólogo en Análisis y Desarrollo de Software</h4>
+                        <span class="casa">SENA</span>
+                        <span class="fecha">2022 - 2024</span>
+                        <ul><li>Levantamiento y evaluación de requisitos de software según estándares y metodologías de análisis.</li><li>Desarrollo y mantenimiento de aplicaciones en Python, Java y JavaScript, con programación orientada a objetos y buenas prácticas.</li><li>Pruebas unitarias, de integración y funcionales, y documentación de procesos y cambios.</li><li>Trabajo con metodologías ágiles (Scrum y Kanban), control de versiones con Git y gestión de incidencias.</li><li>Análisis de datos y métricas de uso para proponer mejoras de rendimiento.</li></ul>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de lógica de programación</h4>
+                        <span class="casa">EGG</span>
+                        <span class="fecha">2022</span>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Bachiller técnico en sistemas</h4>
+                        <span class="casa">Institución Educativa Técnica Industrial Rafael Navia Varón</span>
+                        <span class="fecha">2016 - 2021</span>
+                        
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Analista de datos Jr.</h4>
+                        <span class="casa">Grupo Merpes SAS</span>
+                        <span class="fecha">May 2026 - Nov 2026</span>
+                        <ul><li>Gestioné el proceso de liquidación a distribuidores con consultas SQL y scripts en Python para el ETL.</li><li>Diseñé e implementé pipelines locales para la extracción de información.</li><li>Administré y depuré bases de datos y agregué nuevos datos a las existentes.</li><li>Construí tableros en Power BI (DAX y Power Query) para las campañas de Coca-Cola Panamá, Softys, Mabe Ecuador y Mabe Perú.</li><li>Desarrollé una aplicación que autorrellena archivos de Excel y reduce el tiempo de preparación.</li><li>Creé macros en Excel para ejecutivos de varias áreas.</li><li>Analicé información para la toma de decisiones y elaboré informes gerenciales para las áreas solicitantes.</li></ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Analista de datos Jr.</h4>
+                        <span class="casa">Descya Consultores</span>
+                        <span class="fecha">Ago 2025 - May 2026</span>
+                        <ul><li>Extracción de datos desde Excel y bases relacionales (SQL y MySQL).</li><li>Limpieza y transformación de datos con Excel, R y Python, para garantizar calidad y consistencia.</li><li>Administración de bases de datos MySQL, asegurando su organización y disponibilidad.</li><li>Diseño de tableros dinámicos para monitorear métricas por campaña en tiempo real.</li><li>Automatización de procesos con Python: reduje hasta un 50 % el tiempo dedicado a tareas repetitivas.</li><li>Macros en Excel que redujeron un 35 % los tiempos de ejecución en el manejo de datos.</li><li>Gestión de órdenes de compra, remisiones y facturación.</li></ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Soporte y análisis de la información</h4>
+                        <span class="casa">CAFAM</span>
+                        <span class="fecha">Ene 2025 - Jul 2025</span>
+                        <ul><li>Implementé automatizaciones para el área de soporte en salud, eliminando tareas manuales diarias y nocturnas.</li><li>Automaticé contenedores en Azure para enviar datos por correo de forma programada.</li><li>Limpié y depuré listados de PQRSF con SQL y Excel y reduje el tiempo de preparación semanal.</li><li>Elaboré manuales e informes para proveedores, que facilitaron su pago mensual y la evaluación del servicio.</li><li>Brindé soporte técnico de segundo nivel (N2) en SAP, CRM y otras plataformas, y realicé validaciones técnicas de redes.</li></ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Logística y comercial</h4>
+                        <span class="casa">IKEA (Activos S.A.S)</span>
+                        <span class="fecha">Oct 2023 - Ene 2025</span>
+                        <ul><li>Apoyé a logística en la entrega y seguimiento de mercancía.</li><li>Elaboré informes de KPIs en Power BI para apoyar decisiones basadas en datos.</li><li>En ventas, acompañé a clientes en el proceso de compra.</li><li>Gestioné en Excel la base de clientes potenciales para campañas de seguimiento y fidelización.</li><li>Propuse diseños de espacios del hogar con la herramienta interna.</li></ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Soporte a clientes y datos</h4>
+                        <span class="casa">Nexa BPO (Banco Av Villas)</span>
+                        <span class="fecha">Abr 2023 - Sep 2023</span>
+                        <ul><li>Validé y depuré bases de datos para su migración a entornos SQL.</li><li>Registré y di seguimiento a PQRSF hasta su resolución.</li><li>Resolví consultas de clientes sobre productos financieros y rastreé tarjetas en el aplicativo Domina.</li></ul>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+<section id="portafolio" class="portafolio">
+  <div class="contenido-seccion">
+    <h2>Proyectos</h2>
+    <p class="intro">Dashboards, automatizaciones y herramientas de datos que resuelven problemas reales de reporte y preparación de información.</p>
+    <div class="filtros">
+      <button class="activo" data-f="todos">Todos</button>
+      <button data-f="dashboard">Dashboards</button>
+      <button data-f="automatizacion">Automatización</button>
+      <button data-f="sql">SQL</button>
+      <button data-f="pipeline">Pipelines</button>
+    </div>
+    <div class="proyectos">
+      <article class="tarjeta ancha" data-cat="dashboard">
+        <span class="tipo">Dashboard</span>
+        <h3>Superstore Sales Performance 2025</h3>
+        <p>Panel de ventas con pestañas de resumen ejecutivo, marketing y devoluciones, producto y cliente. Compara la inversión de cada campaña con sus resultados y muestra la tasa de compra por género y el detalle de devoluciones por motivo.</p>
+        <p><strong>Resultado:</strong> se identifican las campañas rentables y la causa principal de devoluciones (296 órdenes devueltas, 180,5 mil reembolsados).</p>
+        <div class="miniaturas">
+          <img src="Dashboard_1.png" alt="Vista 1 del dashboard Superstore Sales Performance 2025">
+          <img src="Dashboard_2.png" alt="Vista 2 del dashboard Superstore Sales Performance 2025">
+          <img src="Dashboard_3.png" alt="Vista 3 del dashboard Superstore Sales Performance 2025">
+          <img src="Dashboard_4.png" alt="Vista 4 del dashboard Superstore Sales Performance 2025">
+          <img src="Dashboard_5.png" alt="Vista 5 del dashboard Superstore Sales Performance 2025">
+        </div>
+        <div class="chips"><span>Power BI</span><span>Looker Studio</span><span>KPIs</span></div>
+      </article>
+      <article class="tarjeta" data-cat="pipeline automatizacion">
+        <span class="tipo">App web</span>
+        <h3>Normalizador de datos de distribuidores</h3>
+        <p>App en Streamlit y Python, desarrollada en equipo, que lleva los archivos de cada distribuidora a un formato común antes de liquidar. Usa la API de Claude para decidir a qué columna estándar corresponde cada columna del archivo, detecta sola la fila de encabezados (hasta 10 filas), compara columnas sin distinguir mayúsculas y permite descargar la configuración en JSON.</p>
+        <p><strong>Resultado:</strong> archivos con formatos distintos quedan comparables sin ajustes manuales. Pasó de ser un script de escritorio a una app publicada en Streamlit Cloud desde GitHub, que se usa desde el navegador.</p>
+        <div class="chips"><span>Python</span><span>Streamlit</span><span>pandas</span><span>API de Claude</span><span>GitHub</span></div>
+      </article>
+      <article class="tarjeta" data-cat="pipeline automatizacion">
+        <span class="tipo">Pipeline</span>
+        <h3>Liquidación mensual automatizada</h3>
+        <p>Scripts en Python que reemplazan el copiar y pegar de cada mes en un archivo de liquidación y ranking de vendedores: leen los .xlsx de los distribuidores, suman las ventas por vendedor, llenan las hojas de liquidación e histórico y extienden los puntos acumulados. El Excel sigue siendo la salida final, y el mes se indica al ejecutar, así que se puede repetir sin duplicar datos.</p>
+        <p><strong>Resultado:</strong> se reducen los pasos manuales de copiar, pegar y arrastrar fórmulas, y los errores que traen.</p>
+        <div class="chips"><span>Python</span><span>pandas</span><span>openpyxl</span><span>Excel</span><span>ETL</span></div>
+      </article>
+      <article class="tarjeta" data-cat="pipeline automatizacion">
+        <span class="tipo">Pipeline</span>
+        <h3>Consolidador de reportes de ventas</h3>
+        <p>Script en Python que recorre las carpetas de enero a agosto, con varios archivos y hojas por carpeta (con logo, con o sin subtítulos), y los une en un solo Excel con los encabezados una vez. Completa el almacén vacío con el del archivo, omite filas de total e ignora las hojas de inventario.</p>
+        <p><strong>Resultado:</strong> un solo archivo consolidado en lugar de abrir y copiar reporte por reporte.</p>
+        <div class="chips"><span>Python</span><span>pandas</span><span>openpyxl</span></div>
+      </article>
+      <article class="tarjeta" data-cat="automatizacion">
+        <span class="tipo">Automatización</span>
+        <h3>Ranking de mejores vendedores en Excel</h3>
+        <p>Automatización con Python y openpyxl que arma el ranking de mejores vendedores. Conserva los colores del archivo, omite filas en blanco y reconoce las referencias de producto con expresiones regulares.</p>
+        <p><strong>Resultado:</strong> el ranking sale listo, sin armarlo a mano cada vez.</p>
+        <div class="chips"><span>Python</span><span>openpyxl</span><span>Regex</span></div>
+      </article>
+      <article class="tarjeta" data-cat="dashboard">
+        <span class="tipo">Dashboard</span>
+        <h3>Tableros de un programa de lealtad (Mabe Ecuador)</h3>
+        <p>Tableros en Power BI para seguir la participación de los vendedores en un programa de puntos: usuarios activos, cargas de puntos, redenciones y vendedores sin movimiento. Incluye las medidas DAX, el diseño de los tableros y la corrección del modelo de datos (relaciones y columnas faltantes). La actualización del dataset se automatiza con Power Automate.</p>
+        <p><strong>Resultado:</strong> el equipo comercial ve la participación de los vendedores en un solo tablero.</p>
+        <div class="chips"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Power Automate</span><span>PostgreSQL</span></div>
+      </article>
+      <article class="tarjeta" data-cat="dashboard">
+        <span class="tipo">Informe</span>
+        <h3>Informe mensual de liquidaciones Softys</h3>
+        <p>Informe en PDF del consolidado nacional de 15 distribuidoras: sell-out (cuota, venta y cumplimiento), desempeño por vendedor, premios por cumplimiento y líderes, con gráficos y comparativo contra el mes anterior. Las medidas, como los clientes únicos por mes y año, se calculan con DAX.</p>
+        <p><strong>Resultado:</strong> las áreas ven qué distribuidoras y vendedores cumplen su meta y cómo cambió frente al mes anterior.</p>
+        <div class="chips"><span>Power BI</span><span>DAX</span><span>Excel</span><span>Informes gerenciales</span></div>
+      </article>
+      <article class="tarjeta" data-cat="automatizacion">
+        <span class="tipo">Automatización</span>
+        <h3>Envío programado de datos en Azure</h3>
+        <p>Proceso en contenedores de Azure que genera y envía por correo, en horarios definidos, los datos que el área de soporte en salud preparaba a mano cada día y en la noche.</p>
+        <p><strong>Resultado:</strong> se eliminaron las tareas manuales diarias y nocturnas.</p>
+        <div class="chips"><span>Azure</span><span>Contenedores</span><span>Correo programado</span></div>
+      </article>
+      <article class="tarjeta" data-cat="sql">
+        <span class="tipo">SQL</span>
+        <h3>Depuración semanal de listados PQRSF</h3>
+        <p>Limpieza y estandarización de los listados de peticiones, quejas y reclamos con SQL y Excel, antes de reportarlos.</p>
+        <p><strong>Resultado:</strong> bajó de forma importante el tiempo de preparación semanal.</p>
+        <div class="chips"><span>SQL</span><span>MySQL</span><span>Excel</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 🔹 VISOR DE IMAGEN (LIGHTBOX) -->
+<div id="visor" class="visor">
+  <span class="cerrar">&times;</span>
+  <img class="imagen-grande" id="imagenGrande" src="" alt="Vista ampliada del proyecto">
+</div>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <form class="col" action="https://formsubmit.co/nicolas.2005xp@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Mensaje desde el portafolio">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="text" name="tema" placeholder="Tema">
+                    <textarea name="mensaje" rows="8" placeholder="Mensaje" required></textarea>
+                    <button type="submit">
+                        Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="Bogota.jpg" alt="Vista de Bogotá">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Bogotá, Colombia
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Teléfono: +57 316 560 5990
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: nicolas.2005xp@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+                <a href="https://github.com/nicolastovar0504" aria-label="GitHub" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/TU-USUARIO" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:nicolas.2005xp@gmail.com" aria-label="Correo"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
